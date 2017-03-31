@@ -19,6 +19,7 @@ This project was generated with:
  ```
  cd c:\projects\
  ng new APM-reactive-forms --verbose --skip-install --style=css --routing
+ cd APM-reactive-forms
  ncu -a
  npm install
  ```   
@@ -27,6 +28,8 @@ This project was generated with:
  * Uses angular-cli's `ng new` command to create the project __but does not automatically run `npm install`__ (due to the use of `--skip-install`).  It also specifies the `--routing` flag that insures that the angular application will support routing right from the beginning without having to put it in later (with all the extra work that requires)
  * Uses npm-check-updates `ncu -a` command to update all packages in package.json to the latest editions
  * Runs the previously bypassed `npm install` 
+
+Side note: I have a PowerShell script called `New-NgProject.ps1` that does all of the above for me - all I do is change the name of the project.
 ## package.json changes
 ### Integrating Bootstrap 3.3.7
 I installed Bootstrap 3.3.7 via:
