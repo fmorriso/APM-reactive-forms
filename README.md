@@ -22,6 +22,25 @@ This project was generated with:
 * [WebStorm](http://www.jetbrains.com/webstorm) 2017.1.1-EAP
 
 ## package.json changes
+### integrating Bootstrap 3.3.7
+I installed Bootstrap 3.3.7 via:
+```
+npm install bootstrap
+```
+To make angular-cli aware that Bootstrap 3.3.7 needs to be injected (via WebPack), I modified `.angular-cli.json\ as follows:
+```
+      "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ],
+```
+### Adding angular language-service
+I added the angular language-service to package.json via:
+```
+npm i -D @angular/language-service
+```
+Notice that it is only needed in `devDependencies`. 
+### npm scripts
 I like to augment the default npm scripts that `ng new` provides by modifying package.json to add/update the following:
 ```
     "build": "ng build --verbose --vendor-chunk --extract-css",
