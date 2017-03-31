@@ -19,7 +19,7 @@ This project was generated with:
  ncu -a
  npm install
  ```   
-* [WebStorm] (http://www.jetbrains.com/webstorm) 2017.1.1-EAP
+* [WebStorm](http://www.jetbrains.com/webstorm) 2017.1.1-EAP
 
 ## package.json changes
 I like to augment the default npm scripts that `ng new` provides by modifying package.json to add/update the following:
