@@ -28,12 +28,12 @@ This project was generated with:
  * Uses npm-check-updates `ncu -a` command to update all packages in package.json to the latest editions
  * Runs the previously bypassed `npm install` 
 ## package.json changes
-### integrating Bootstrap 3.3.7
+### Integrating Bootstrap 3.3.7
 I installed Bootstrap 3.3.7 via:
 ```
 npm install -S bootstrap
 ```
-To make angular-cli aware that Bootstrap 3.3.7 needs to be injected (via WebPack), I modified `.angular-cli.json\ as follows:
+To make angular-cli aware that Bootstrap 3.3.7 needs to be injected (via WebPack), I modified `.angular-cli.json` as follows:
 ```
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
