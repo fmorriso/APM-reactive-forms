@@ -9,7 +9,6 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "assets/images/logo.jpg",
         "favicon.ico"
       ],
       "index": "index.html",
