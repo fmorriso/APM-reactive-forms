@@ -1,6 +1,17 @@
-# APMReactiveForms
+# APM-Reactive-Forms
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+## Credit
+The code used here was first developed by the world-famous developer, Deborah Kurata for her Pluralsight course, Angular2 - Reactive Forms.
+
+All I did was adapt it to use my favorite tools, which are listed below.
+
+## Tools Used
+
+This project was generated with:
+* [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+* [Angular 4.0.1](https://angular.io)
+* TypeScript 2.2.2
+* [WebStorm] (http://www.jetbrains.com/webstorm) 2017.1.1-EAP
 
 ## Development server
 
