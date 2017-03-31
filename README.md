@@ -63,7 +63,7 @@ The changes I made due to using angular-cli `ng generate` are listed below:
 ## Welcome component instead of Home component
 This is because `ng generate component Welcome` generates the same files as Deborah's original, just under the different directory, one that matches the component name.
 ## logo.jpg `<img>` reference path change
-In order to get the `logo.jpg` file to show up on the Welcome page, I had to change the <img> tag to this path:
+In order to get the `logo.jpg` file to show up on the Welcome page, I had to change the `<img>` tag to this path:
 ```
     <div class="row">
       <img src="../../assets/images/logo.jpg"
