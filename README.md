@@ -12,20 +12,26 @@ This project was generated with:
 * [Angular 4.0.1](https://angular.io)
 * [npm-check-updates](https://github.com/tjunnone/npm-check-updates)
 * [TypeScript 2.2.2 for Visual Studio 2015 (works for 2017 too)](https://www.microsoft.com/en-us/download/details.aspx?id=48593)
-* TypeScript 2.2.2 - via:
+* TypeScript 2.2.2 - (comes along for the ride if you create the project as shown below)
+* [WebStorm](http://www.jetbrains.com/webstorm) 2017.1.1-EAP
+
+## How I created the application
  ```
  cd c:\projects\
  ng new APM-reactive-forms --verbose --skip-install --style=css --routing
  ncu -a
  npm install
  ```   
-* [WebStorm](http://www.jetbrains.com/webstorm) 2017.1.1-EAP
-
+ The above does the following:
+ * Positions to my projects folder
+ * Uses angular-cli's `ng new` command to create the project __but does not automatically run `npm install`__ (that's what `--skip-install` is for)
+ * Uses npm-check-updates `ncu -a` command to update all packages in package.json to the latest editions
+ * Runs the previously bypassed `npm install` 
 ## package.json changes
 ### integrating Bootstrap 3.3.7
 I installed Bootstrap 3.3.7 via:
 ```
-npm install bootstrap
+npm install -S bootstrap
 ```
 To make angular-cli aware that Bootstrap 3.3.7 needs to be injected (via WebPack), I modified `.angular-cli.json\ as follows:
 ```
@@ -51,6 +57,7 @@ I like to augment the default npm scripts that `ng new` provides by modifying pa
 The reason for making the above changes/additions:
 * I like the CSS in its own separate file that is brought into index.html separately as part of the header of the HTML.
 * I like the vendor "stuff" in it's own webpack'ed file.
+* I like `--verbose` output to help me track down build and/or serve errors.
 ## Changes due to use of angular-cli
 The changes I made due to using angular-cli `ng generate` are listed below:
 ## Welcome component instead of Home component
