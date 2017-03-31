@@ -24,7 +24,7 @@ This project was generated with:
  ```   
  The above does the following:
  * Positions to my projects folder
- * Uses angular-cli's `ng new` command to create the project __but does not automatically run `npm install`__ (that's what `--skip-install` is for)
+ * Uses angular-cli's `ng new` command to create the project __but does not automatically run `npm install`__ (due to the use of `--skip-install`).  It also specifies the `--routing` flag that insures that the angular application will support routing right from the beginning without having to put it in later (with all the extra work that requires)
  * Uses npm-check-updates `ncu -a` command to update all packages in package.json to the latest editions
  * Runs the previously bypassed `npm install` 
 ## package.json changes
@@ -43,11 +43,11 @@ To make angular-cli aware that Bootstrap 3.3.7 needs to be injected (via WebPack
 ### Adding angular language-service
 I added the angular language-service to package.json via:
 ```
-npm i -D @angular/language-service
+npm install -D @angular/language-service
 ```
 Notice that it is only needed in `devDependencies`. 
 ### npm scripts
-I like to augment the default npm scripts that `ng new` provides by modifying package.json to add/update the following:
+I like to modify and augment the default npm scripts that `ng new` provides by modifying package.json to add/update the following:
 ```
     "build": "ng build --verbose --vendor-chunk --extract-css",
     "build-prod": "ng build --verbose --vendor-chunk --extract-css --prod --aot",
