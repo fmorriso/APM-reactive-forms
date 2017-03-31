@@ -15,7 +15,7 @@ This project was generated with:
 * TypeScript 2.2.2 - via:
  ```
  cd c:\projects\
- ng new APM-reactive-forms --si
+ ng new APM-reactive-forms --verbose --skip-install --style=css --routing
  ncu -a
  npm install
  ```   
