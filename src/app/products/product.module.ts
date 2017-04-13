@@ -16,17 +16,30 @@ import { ProductEditGuard } from './product-edit.guard';
 import {SharedModule} from '../shared/shared.module';
 import {ProductService} from './product.service';
 import { ProductEditComponent } from './product-edit.component';
+import { ProductDetailComponent } from './product-detail.component';
 
 
 @NgModule({
   imports: [
     SharedModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    InMemoryWebApiModule.forRoot(ProductData),
+    RouterModule.forChild([
+      { path: 'products', component: ProductListComponent },
+      { path: 'product/:id',
+        canActivate: [ ProductDetailGuard],
+        component: ProductDetailComponent
+      },
+      { path: 'productEdit/:id',
+        canDeactivate: [ ProductEditGuard ],
+        component: ProductEditComponent },
+    ])
   ],
   declarations: [
     ProductListComponent,
     ProductFilterPipe,
-    ProductEditComponent
+    ProductEditComponent,
+    ProductDetailComponent
   ],
   providers: [
     ProductService,
