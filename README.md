@@ -52,10 +52,10 @@ Notice that it is only needed in `devDependencies`.
 ### npm scripts
 I like to modify and augment the default npm scripts that `ng new` provides by modifying package.json to add/update the following:
 ```
-    "build": "ng build --verbose --vendor-chunk --extract-css",
-    "build-prod": "ng build --verbose --vendor-chunk --extract-css --prod --aot",
-    "start": "ng serve --verbose --vendor-chunk --extract-css",
-    "start-prod": "ng serve --verbose --vendor-chunk --extract-css --prod --aot",
+    "build": "ng build --progress --verbose --vendor-chunk --extract-css",
+    "build-prod": "ng build --progress --verbose --vendor-chunk --extract-css --prod",
+    "start": "ng serve --output --verbose --vendor-chunk --extract-css",
+    "start-prod": "ng serve --output --verbose --vendor-chunk --extract-css --prod",
 ```
 The reason for making the above changes/additions:
 * I like the CSS in its own separate file that is brought into index.html separately as part of the header of the HTML.
