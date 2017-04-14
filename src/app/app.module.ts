@@ -9,7 +9,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
 /* Feature Modules */
 /* Product Module has its own route definitions, so no need to include those routes in app-routing.module */
-import { ProductModule }  from './products/product.module';
+import { ProductsModule }  from './products/products.module';
 import { ProductService } from './products/product.service';
 
 @NgModule({
@@ -23,7 +23,7 @@ import { ProductService } from './products/product.service';
     FormsModule,
     HttpModule,
 
-    ProductModule,
+    ProductsModule,
     AppRoutingModule
 
   ],
