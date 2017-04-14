@@ -12,7 +12,9 @@ const routes: Routes = [
   { path: 'products',
     component: ProductListComponent,
     children :[
-      {path: '', component: ProductListComponent}
+      {
+        path: '',
+        component: ProductListComponent}
       ,
       {
         path: 'product/:id',
@@ -33,14 +35,12 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 
-export class ProductRoutingModule {}
+export class ProductsRoutingModule {}
 
 // Do **NOT** put the "guard" items in the following list:
 export const routedComponents = [
   ProductComponent,
   ProductEditComponent,
-
   ProductDetailComponent,
-
   ProductListComponent
 ];

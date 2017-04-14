@@ -5,7 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { ProductData }  from './product-data';
 
-import { ProductRoutingModule, routedComponents } from './product-routing.module';
+import { ProductsRoutingModule, routedComponents } from './products-routing.module';
 
 import {ProductListComponent} from './product-list.component';
 
@@ -25,7 +25,7 @@ import {SharedModule} from '../shared/shared.module';
     SharedModule,
     ReactiveFormsModule,
     InMemoryWebApiModule.forRoot(ProductData),
-    ProductRoutingModule
+    ProductsRoutingModule
   ],
   declarations: [
     routedComponents,
@@ -40,4 +40,4 @@ import {SharedModule} from '../shared/shared.module';
     ProductEditGuard
   ]
 })
-export class ProductModule { }
+export class ProductsModule { }
