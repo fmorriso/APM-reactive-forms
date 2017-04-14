@@ -69,4 +69,17 @@
       </table>
     </div>
   </div>
+
+<!--
+ Without the following extra router-outlit, I see the following error in the browser console:
+
+Error: Cannot find primary outlet to load 'ProductListComponent'
+    at getOutlet (http://localhost:4200/vendor.bundle.js:38540:19) [angular]
+
+<div class="h4 bg-warning">router outlet</div>
+<router-outlet></router-outlet>
+
+However, when I put that above in, I see the content duplicated
+-->
+
 </div>
