@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { RouterModule} from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
 // Imports for loading & configuring the in-memory web api
@@ -23,20 +22,10 @@ import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   imports: [
-    ProductRoutingModule,
     SharedModule,
     ReactiveFormsModule,
     InMemoryWebApiModule.forRoot(ProductData),
-    RouterModule.forChild([
-      { path: 'products', component: ProductListComponent },
-      { path: 'product/:id',
-        canActivate: [ ProductDetailGuard],
-        component: ProductDetailComponent
-      },
-      { path: 'productEdit/:id',
-        canDeactivate: [ ProductEditGuard ],
-        component: ProductEditComponent },
-    ])
+    ProductRoutingModule
   ],
   declarations: [
     routedComponents,

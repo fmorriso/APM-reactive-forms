@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { StarComponent } from './star.component';
+import { PageNotFoundComponent } from './page-not-found.component';
 
 @NgModule({
   imports: [
@@ -13,6 +14,6 @@ import { StarComponent } from './star.component';
     FormsModule,
     StarComponent
   ],
-  declarations: [ StarComponent ]
+  declarations: [ StarComponent, PageNotFoundComponent ]
 })
 export class SharedModule { }
