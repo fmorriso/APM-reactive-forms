@@ -82,6 +82,13 @@ You'll also notice that I moved the inline CSS in Deborah's original code to a s
 }
 ```
 Since angular-cli automatically generates a `welcome.component.css` file and references it in the corresponding `welcome.component.ts` file, I figured *why not put custom CSS in the place where angular-cli automatically provided for me?*
+
+## Making subcomponents into Angular Modules
+
+[ngModules](https://angular.io/docs/ts/latest/guide/ngmodule.html)
+
+[ngModule FAQS](https://angular.io/docs/ts/latest/cookbook/ngmodule-faq.html#!#q-what-to-export)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

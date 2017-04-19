@@ -1,7 +1,7 @@
 import { NgModule }              from '@angular/core';
 import { Routes, RouterModule }  from '@angular/router';
 
-import { ProductComponent }      from './product.component';
+import { ProductsComponent }      from './products.component';
 import { ProductEditComponent}   from './product-edit.component';
 import { ProductEditGuard}       from './product-edit.guard';
 import { ProductDetailComponent} from './product-detail.component';
@@ -17,12 +17,12 @@ const routes: Routes = [
         component: ProductListComponent}
       ,
       {
-        path: 'product/:id',
+        path: 'view/:id',
         canActivate: [ ProductDetailGuard],
         component: ProductDetailComponent
       }
       ,
-      { path: 'productEdit/:id',
+      { path: 'edit/:id',
         canDeactivate: [ ProductEditGuard ],
         component: ProductEditComponent
       }
@@ -39,7 +39,7 @@ export class ProductsRoutingModule {}
 
 // Do **NOT** put the "guard" items in the following list:
 export const routedComponents = [
-  ProductComponent,
+  ProductsComponent,
   ProductEditComponent,
   ProductDetailComponent,
   ProductListComponent
