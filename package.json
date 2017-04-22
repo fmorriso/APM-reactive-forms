@@ -7,7 +7,7 @@
     "build": "ng build --verbose --progress --vendor-chunk --extract-css",
     "build-prod": "ng build --verbose --progress --vendor-chunk --extract-css --prod",
     "start": "ng serve --open --verbose --vendor-chunk --extract-css",
-    "start-prod": "ng serve --open --verbose --vendor-chunk --extract-css --prod --aot",
+    "start-prod": "ng serve --open --verbose --vendor-chunk --extract-css --prod",
     "test": "ng test",
     "lint": "ng lint --typeCheck --format stylish",
     "e2e": "ng e2e"
