@@ -89,6 +89,11 @@ Since angular-cli automatically generates a `welcome.component.css` file and ref
 
 [ngModule FAQS](https://angular.io/docs/ts/latest/cookbook/ngmodule-faq.html#!#q-what-to-export)
 
+## 2017-08 Errors under Angular 4.3.2 + Angular-CLI 1.2.6
+
+ERROR in Type StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts is part of the declarations of 2 modules: SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts! Please consider moving StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts to a higher module that imports SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts. You can also create a new NgModule that exports and includes StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts then import that NgModule in SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts.
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
