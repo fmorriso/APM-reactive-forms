@@ -4,7 +4,7 @@ import {FormsModule} from '@angular/forms';
 
 import {StarComponent} from './star.component';
 // ERROR in Can't export directive PageNotFoundComponent in C:/projects/APM-reactive-forms/src/app/shared/page-not-found.component.ts from SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts as it was neither declared nor imported!
-// import {PageNotFoundComponent} from './page-not-found.component';
+import {PageNotFoundComponent} from './page-not-found.component';
 
 
 @NgModule({
@@ -14,9 +14,10 @@ import {StarComponent} from './star.component';
 	exports: [
 		CommonModule,
 		FormsModule,
-		StarComponent
+		StarComponent,
+		PageNotFoundComponent
 	],
-	declarations: [StarComponent],
+	declarations: [StarComponent, PageNotFoundComponent],
 })
 export class SharedModule {
 }

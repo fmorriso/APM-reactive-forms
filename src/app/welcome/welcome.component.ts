@@ -1,17 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, VERSION} from '@angular/core';
 
 @Component({
-  selector: 'app-welcome',
-  templateUrl: './welcome.component.html',
-  styleUrls: ['./welcome.component.css']
+	selector: 'app-welcome',
+	templateUrl: './welcome.component.html',
+	styleUrls: ['./welcome.component.css']
 })
 export class WelcomeComponent implements OnInit {
 
-  public pageTitle = 'Welcome';
+	public angularVersion: string;
+	public pageTitle = 'Welcome';
 
-  constructor() { }
+	constructor() {
+	}
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		this.angularVersion = VERSION.full
+	}
 
 }

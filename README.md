@@ -1,5 +1,13 @@
 ﻿# APM-Reactive-Forms
 
+## CURRENTLY BROKEN
+
+As of August 2, 2017, the Edit Product and Add Product sections of this application do not work.
+
+Something changed in either Angular 4.3.2 and/or Angular-CLI 1.2.6 that causes the Page Not Found to kick in when either of those functions is attempted.
+
+If anyone has any insights on why this happens, please let me know.
+
 ## Credit
 The code you see here was first developed by the world-famous developer, Deborah Kurata for her Pluralsight course, Angular2 - Reactive Forms.
 
@@ -91,7 +99,23 @@ Since angular-cli automatically generates a `welcome.component.css` file and ref
 
 ## 2017-08 Errors under Angular 4.3.2 + Angular-CLI 1.2.6
 
+I am not sure how to fix these errors that only happen when I use the prod option when building:
+They started happening right after I upgraded to Angular-CLI 1.2.6 and Angular 4.3.2
+
+```
+ng build --prod
+```
+
 ERROR in Type StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts is part of the declarations of 2 modules: SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts! Please consider moving StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts to a higher module that imports SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts. You can also create a new NgModule that exports and includes StarComponent in C:/projects/APM-reactive-forms/src/app/shared/star.component.ts then import that NgModule in SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts.
+
+ERROR in Type PageNotFoundComponent in C:/projects/APM-reactive-forms/src/app/shared/page-not-found.component.ts is part of the declarations of 2 modules: 
+SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts 
+and 
+AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts! 
+Please consider moving PageNotFoundComponent in C:/projects/APM-reactive-forms/src/app/shared/page-not-found.component.ts to a higher module
+that imports SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts 
+and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts. 
+You can also create a new NgModule that exports and includes PageNotFoundComponent in C:/projects/APM-reactive-forms/src/app/shared/page-not-found.component.ts then import that NgModule in SharedModule in C:/projects/APM-reactive-forms/src/app/shared/shared.module.ts and AppModule in C:/projects/APM-reactive-forms/src/app/app.module.ts.
 
 
 ## Development server
