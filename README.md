@@ -16,12 +16,12 @@ All I did was adapt it to use my favorite tools, which are listed below.
 ## Tools Used
 
 This project was generated with:
-* [Angular-cli](https://github.com/angular/angular-cli) version 1.0.0.
-* [Angular 4.0.1](https://angular.io)
+* [Angular-cli](https://github.com/angular/angular-cli) version 1.2.6.
+* [Angular 4.3.2](https://angular.io)
 * [npm-check-updates](https://github.com/tjunnone/npm-check-updates)
-* [TypeScript 2.2.2 for Visual Studio 2015 (works for 2017 too)](https://www.microsoft.com/en-us/download/details.aspx?id=48593)
-* TypeScript 2.2.2 - (comes along for the ride if you create the project as shown below)
-* [WebStorm](http://www.jetbrains.com/webstorm) 2017.1.1-EAP
+* [TypeScript 2.4.1 for Visual Studio 2015 (works for 2017 too)](https://www.microsoft.com/en-us/download/details.aspx?id=48593)
+* TypeScript 2.4.2 - (comes along for the ride if you create the project as shown below)
+* [WebStorm](http://www.jetbrains.com/webstorm) 2017.2.1-EAP
 
 ## How I created the application
  ```
